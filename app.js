@@ -20,7 +20,7 @@ app.use(session({
 }));
 
 app.use(express.urlencoded({extended:true}));
-app.use(require('./rutas/rutas'));
+app.use(require('./Rutas/rutas'));
 app.use((err,req,res,next)=>{
     res.send({err:err.message});
 });
