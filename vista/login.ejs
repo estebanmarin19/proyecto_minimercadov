@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="/css/login.css">
+    
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img class="imgh" src="/images/imagen3.png" alt="">
+                </div>
+<!--autocomplete="off"-->
+                <div class="login__forms">
+                    <form action="/login" method="POST" class="login__registre" id="login-in" >
+                        <h1 class="login__title">Iniciar Sesion</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" name="usuario" placeholder="Nombre de Usuario" class="login__input">
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" name="clave" placeholder="Contraseña" class="login__input">
+                        </div>
+
+                       
+                       
+                            <button class="login__button" type="submit"  >Login</button>
+
+                       
+
+                        
+                    </form>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    
+
+         
+    </body>
+</html>

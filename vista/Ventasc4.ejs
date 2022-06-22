@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    
+    <title>Ventas</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/css/insertarventas.css">
+   
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav-background">
+            <div class="mobile-logo">
+                <img src="/images/logo2.png" alt="">
+            </div>
+            <div class="mobile-nav">
+                <div class="cart">
+                    <div class="flex items-center">
+                        <img src="/icons/cerrar.png" alt="">
+                        <a href="cerrar">Cerra Sesion</a>
+                    </div>
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="insertarempleados">Empleados</a>
+                        </li>
+                        <li>
+                            <a href="insertarusuarios">Usuarios</a>
+                        </li>
+                        <li>
+                            <a href="insertarproveedores">Proveedores</a>
+                        </li>
+                        <li>
+                            <a href="productos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="insertarpedidos">Pedidos</a>
+                        </li>
+                        <li>
+                            <a href="insertarnomina">Nomina</a>
+                        </li>
+                        <li>
+                            <a href="insertarventas">Ventas</a>
+                        </li>
+                        <li>
+                            <a href="vistadevoluciones">Devoluciones</a>
+                        </li>
+                        <li>
+                            <a href="consultadeclientes">Clientes</a>
+                        </li>
+                        <li>
+                            <a href="misdatosadmin">Mis Datos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex items-center">
+                    <img src="/icons/icons8-phone-50.png"  alt="">
+                    <div>
+                        <h5>Tel: 3223945700</h5>
+                        <h6>E-mail : Minimercado@gmaill.com</h6>
+                    </div>
+                </div>
+                <div class="time flex items-center">
+                    <img src="/icons/icons8-clock-50.png" alt="">
+                    <div>
+                        <h5>Horario:</h5>
+                        <h6>lunes - Sabado (8:00am - 6:00pm)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content-wrapper">
+            <div class="nav-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+            </div>
+            <div class="site-content">
+                <header class="topbar">
+                    <div class="container flex justify-between items-center">
+                        <div class="icons">
+                            <a href="#"><img src="/icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="/icons/twitter.svg" alt=""></a>
+                            <a href="#"><img src="/icons/google.svg" alt=""></a>
+                            <a href="#"><img src="/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="/icons/search.svg" alt=""></a>
+                        </div>
+                        <div class="auth flex items-center">
+                            <div>
+                                <img src="/icons/user-icon.svg" alt="">
+                                <a href="#">Administrador</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="/icons/edit.svg" alt="">
+                                <a href="#">Bienvenido</a>
+                            </div>
+                            <span class="divider">|</span>
+                            <div>
+                                <img src="/icons/cerrar.jpg" alt="">
+                                <a href="cerrar">Cerra Sesion</a>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                </header>
+
+                <nav>
+                    <div class="top">
+                        <div class="container flex justify-between">
+                            <div class="contact flex items-center">
+                                <img src="/icons/icons8-phone-50.png" alt="">
+                                <div>
+                                    <h5>Tel: 3223945700</h5>
+                        <h6>E-mail : Minimercado@gmaill.com</h6>
+
+                                </div>
+                            </div>
+                            <div class="branding">
+                                <img src="images/logo.png" alt="">
+                            </div>
+                            <div class="time flex items-center">
+                                <img src="/icons/icons8-clock-50.png" alt="">
+                                <div>
+                                    <h5>Horario:</h5>
+                        <h6>lunes - Sabado (8:00am - 6:00pm)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic-shadow">
+                        <div class="container flex justify-center">
+                            <a href="ventasclientes" class="active">Ventas</a>
+                            <a href="informacionpersoempleados" >Mis datos Personales</a>
+                        </div>
+                    </div>
+                </nav>
+
+
+               
+   
+
+                <div class="containerr">
+                    <div class="title">Desea agregar otro producto al carrito??</div>
+                    <div class="content">
+                        <form action="Ventasc2">
+                        <div class="button">
+                          <input type="submit"  value="SI" name="btnact" id="btnact">
+                        </div>
+                      </form>
+                      <form action="Ventasc5">
+                        <div class="button">
+                          <input type="submit"  value="NO" name="btnact" id="btnact">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+   
+      
+
+                  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+                  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                  <script src="js/menuu.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    
+
+
+    <script>
+
+        function variableno(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Campo no modificable!',
+            showConfirmButton: false,
+            timer: 1800
+
+      })
+    }
+    function insertar(){
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Dato Insertado',
+            showConfirmButton: false,
+            timer: 1800
+            })
+            }
+
+            function act(){
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Campos Actualizados',
+            showConfirmButton: false,
+            timer: 2500
+            })
+            }
+            
+            function eli(){
+          Swal.fire({
+            position: 'top-center',
+            icon: 'success',
+            title: 'Campo Eliminado',
+            showConfirmButton: false,
+            timer: 2500
+            })
+            }
+          </script>
+  
+       
+</body>
+
+</html>

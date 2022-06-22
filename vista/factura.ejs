@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factura del Cliente</title>
+    <link rel="stylesheet" href="/css/stylefactura.css">
+</head>
+<body>
+<div class="control-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-2-4">
+        <div class="slogan">Detalles de Facturación </div>
+
+     
+        
+      </div>
+      
+      <div class="col-4 text-right">
+        
+        <a href="javascript:window.print()">Descargar Factura</a>
+      </div><!--.col-->
+    </div><!--.row-->
+  </div><!--.container-->
+</div><!--.control-bar-->
+
+<header class="row">
+  <div class="logoholder text-center" >
+    <img src="images/logo.png">
+  </div><!--.logoholder-->
+
+  <div class="me">
+    <p >
+      <strong>Minimercado Valentina</strong><br>
+      
+      Mosquera, Cundinamarca.<br>
+      
+    </p>
+  </div><!--.me-->
+
+  <div class="info">
+    <p >
+      Web:<a href="https://minimercadov.herokuapp.com/">https://minimercadov.herokuapp.com/</a><br>
+      E-mail: <a href="#">Minimercadov@gmail.com</a><br>
+      Tel: +57-320-317-7426
+    </p>
+  </div><!-- .info -->
+
+  
+
+</header>
+
+
+<div class="row section">
+	<div class="col-2">
+    <h1 >Factura</h1>
+  </div><!--.col-->
+  <div class="col-2 text-right details">
+    <p >
+      Fecha: <input type="text" class="datePicker" /><br>
+    </p>
+  </div><!--.col-->
+
+  <div class="col-2">
+    <% datos1.forEach(function (datos1){ %>
+    <p  class="client">
+      <strong>Datos del Cliente</strong><br>
+      Nombre: <%=datos1.nombre%><br>
+      Apellido:  <%=datos1.apellido%><br>
+	     Numero de Cedula:  <%=datos1.doccli%><br>
+    </p>
+  </div><!--.col-->
+  <%})%>
+</div><!--.row-->
+
+
+<div class="row section" style="margin-top:-1rem">
+<div class="col-1">
+	<table style='width:100%'>
+    <thead >
+	<tr class="invoice_detail">
+      <th width="25%">Nombre del Vendedor</th>
+       <th width="25%">Apellido </th>
+      <th width="20%">Numero de Cedula</th>
+      <th width="30%">Telefono</th>
+	 </tr> 
+    </thead>
+    <tbody >
+	<tr class="invoice_detail">
+        <% datos2.forEach(function (datos2){ %>
+      <td width="25%" ><%=datos2.nombre%></td>
+       <td width="25%"><%=datos2.apellido%> </td>
+      <td width="20%"><%=datos2.docempleado%></td>
+      <td width="30%"><%=datos2.celular%></td>
+      <%})%>
+	 </tr>
+	</tbody>
+	</table>
+</div>
+
+</div>
+ <div class="d1">
+  <div class="invoicelist-body">
+    <table>
+      <thead >
+        <th width="5%">Código</th>
+        <th width="60%">Nombre del Producto</th>
+        <th width="15%">Precio</th> 
+      </thead>
+      <tbody>
+        <% datos3.forEach(function (datos3){ %>
+        <tr>
+          <td width='5%'> <span ><%=datos3.codproducto%></span></td>
+          <td width='60%'><span ><%=datos3.nombreproduct%></span></td>
+          <td width='15%'><span >$<%=datos3.precioventa%></span></td>
+        </tr>    
+         <%})%>  
+          
+      </tbody>
+    </table>
+  </div>
+ </div>
+ <div class="d2">
+  <div class="invoicelist-body" >
+    <table>
+      <thead >
+        <th width="45%">Cantidad</th>
+        <th width="10%">SubTotal</th>
+      
+      </thead>
+      <tbody>
+        <% datos4.forEach(function (datos4){ %>
+        <tr>
+          <td width='45%'><span ><%=datos4.cantidadproduc%></span></td>
+          <td width='10%'><span >$<%=datos4.valordventa%></span></td>
+        </tr>
+        <%})%>
+      </tbody>
+    </table>
+  </div>
+ </div>
+  
+<div class="d3">
+  <div class="invoicelist-footer">
+    <table >
+     
+      <tr>
+        <% datos5.forEach(function (datos5){ %>
+        <td><strong>Total:</strong></td>
+        <td id="total_prices">$<%=datos5.valorventa%></td>
+        <%})%>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+
+
+
+<footer class="row">
+  <div class="col-1 text-center">
+    <p class="notaxrelated">.</p>
+    
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="./js/fac.js"></script>
+
+</body>
+</html>
