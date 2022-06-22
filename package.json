@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,8 @@
     "pdfkit": "^0.13.0",
     "pdfkit-construct": "^1.2.3",
     "sweetalert2": "^11.4.17"
+  },
+  "devDependencies": {
+    "heroku": "^7.60.2"
   }
 }
